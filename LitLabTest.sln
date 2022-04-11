@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LitLabKata", "LitLabTest\LitLabKata.csproj", "{A5AA5E11-26A8-4679-8423-82D60D596E07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LitLabKata.Test", "LitLabKata.Test\LitLabKata.Test.csproj", "{33B14536-F605-496D-AEC3-2EE5F8B6EFE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5AA5E11-26A8-4679-8423-82D60D596E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5AA5E11-26A8-4679-8423-82D60D596E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5AA5E11-26A8-4679-8423-82D60D596E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5AA5E11-26A8-4679-8423-82D60D596E07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33B14536-F605-496D-AEC3-2EE5F8B6EFE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33B14536-F605-496D-AEC3-2EE5F8B6EFE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33B14536-F605-496D-AEC3-2EE5F8B6EFE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33B14536-F605-496D-AEC3-2EE5F8B6EFE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4BF8B2F9-7922-4145-919C-C19C8D285735}
+	EndGlobalSection
+EndGlobal
