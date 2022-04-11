@@ -66,7 +66,7 @@ namespace LitLabKata.Services
             catch (KeyNotFoundException e)
             {
                 logger.LogError($"The user {nick} does not exist, cannot be deleted.", e);
-                return userRepository.GetAllUsers();
+                return null;
             }
         }
 
@@ -84,7 +84,7 @@ namespace LitLabKata.Services
             catch (KeyNotFoundException e)
             {
                 logger.LogError($"The user {nick} does not exist, cannot be updated.", e);
-                return userRepository.GetAllUsers();
+                throw e;
             }
         }
 

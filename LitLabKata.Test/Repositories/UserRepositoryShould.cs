@@ -95,5 +95,14 @@ namespace LitLabKata.Test.Repositories
         {
             Assert.Throws<KeyNotFoundException>(() => userRepository.UpdateUser("nouser", new User("nick", "newName", "surname", "email", "direction", "123456789")));
         }
+
+        [TearDown]
+        public void TearDown()
+        {
+            foreach (var user in userRepository.GetAllUsers())
+            {
+                userRepository.DeleteUser(user.Nick);
+            }
+        }
     }
 }

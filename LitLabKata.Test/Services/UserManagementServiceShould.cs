@@ -114,7 +114,7 @@ namespace LitLabKata.Test.Services
         }
 
         [Test]
-        public void ReturnTheSameListIfTheUpdatedUserDoesNotExist()
+        public void ReturnNullIfTheUpdatedUserDoesNotExist()
         {
             var userManagementService = new UserManagementService(userRepo, logger.Object);
             var testUser = new User("testuser", "test", "user", "testUser@gmail.com", "test road, n42", "123456789");
@@ -124,7 +124,16 @@ namespace LitLabKata.Test.Services
 
             var result = userManagementService.UpdateUser(testUserUpdated.Nick, testUserUpdated);
 
-            Assert.AreEqual(testUser, result[0]);
+            Assert.IsNull(result);
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            foreach (var user in userRepo.GetAllUsers())
+            {
+                userRepo.DeleteUser(user.Nick);
+            }
         }
     }
 }
